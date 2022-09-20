@@ -110,7 +110,7 @@ function addClasses() {
 
 function addContent(arr, index) {
   
-  gameImg.src = `../img/${arr[index].img}`;
+  gameImg.src = `./src/img/${arr[index].img}`;
   gameTitle.innerText = arr[index].name;
   gameDescription.innerText = arr[index].description;
   gamePrice.innerText = `R$ ${(arr[index].price).toFixed(2)}`;
@@ -158,7 +158,7 @@ function cartAddClasses() {
 
 function cartAddContent(arr, index) {
 
-  cartImg.src = `../img/${arr[index].img}`;
+  cartImg.src = `./src/img/${arr[index].img}`;
   cartName.innerText = arr[index].name;
   cartPrice.innerText = `R$ ${(arr[index].price).toFixed(2)}`;
   cartRemoveItem.innerText = "Remover";

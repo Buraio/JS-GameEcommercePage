@@ -1,0 +1,11 @@
+{
+  "name": "Game-E-commerce-Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Buraio/Game-E-commerce-Project.git",
+  "author": "Bryan <bryanbatista79688@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.59.3"
+  }
+}

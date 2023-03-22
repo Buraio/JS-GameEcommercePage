@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $gray0;
+}
+
+body {
+  background-color: $gray0;
+}
+
+// CSS Resets
+
+button,
+a {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+button,
+input,
+label,
+select,
+option {
+  font-family: $font-family-default;
+}

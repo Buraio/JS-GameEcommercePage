@@ -1,0 +1,12 @@
+main {
+  background-color: $gray4;
+
+  div.mainContainer {
+    max-width: $max-width-container;
+    height: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}

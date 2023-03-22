@@ -1,0 +1,146 @@
+main {
+  aside.shoppingCart {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    gap: 20px;
+    background-color: $gray3;
+
+    div#searchBar {
+      width: 100%;
+      height: 50px;
+      border-radius: 5px 5px 0px 0px;
+      margin: 20px 0 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      button {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+
+        @include transition(0.2s);
+
+        &:hover {
+          background-color: $gray0;
+
+          span {
+            color: $gray4;
+          }
+        }
+      }
+
+      input {
+        width: 100%;
+        max-width: 300px;
+        height: 30px;
+        padding-left: 10px;
+        border-radius: 5px;
+        border: none;
+        color: $gray4;
+        font-weight: $weight-medium;
+
+        &::placeholder {
+          font-style: italic;
+        }
+      }
+
+      span {
+        width: 30px;
+        height: 30px;
+        border: 2px solid $gray0;
+        border-radius: 5px;
+      }
+    }
+
+    div#shoppingInfo {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    div#cart {
+      width: 100%;
+
+      h2 {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 2px solid $gray0;
+
+        span {
+          height: 25px;
+        }
+      }
+
+      ul#shoppingList {
+        width: 100%;
+        background-color: $gray3;
+        height: 300px;
+        overflow-y: auto;
+        margin: 20px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li.cartItem {
+          width: 100%;
+          max-width: 350px;
+          margin: 5px 0;
+          padding: 0px 5px;
+          display: flex;
+          justify-content: space-between;
+          cursor: default;
+
+          img.cartImg {
+            width: 120px;
+            border-radius: 3px;
+          }
+
+          div.cartItemDesc {
+            width: 130px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .nameStrong {
+              display: block;
+            }
+          }
+
+          button.removeItem {
+            border: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    div#shoppingInfo {
+      width: 100%;
+      height: 100px;
+      font-weight: $weight-medium;
+
+      span.quantity,
+      span.total {
+        width: 50%;
+        padding: 10px;
+      }
+
+      span.number,
+      span.value {
+        text-align: right;
+      }
+    }
+  }
+}

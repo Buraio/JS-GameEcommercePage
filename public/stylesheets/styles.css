@@ -1,0 +1,381 @@
+html {
+  --primary-color: #212529;
+  --secondary-color: #495057;
+}
+
+html[data-theme=light] {
+  --primary-color: red;
+  --secondary-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f8f9fa;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li,
+button,
+input,
+label,
+select,
+option {
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  --primary-color: #212529;
+  --secondary-color: #495057;
+}
+
+html[data-theme=light] {
+  --primary-color: red;
+  --secondary-color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  background-color: #212529;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+header div.headerContainer {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+header div.headerContainer h1.title {
+  font-size: 2rem;
+  font-family: "Roboto Slab", sans-serif;
+}
+header div.leftNavDiv {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+header div.rightThemeDiv {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+header div.rightThemeDiv span {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+header div.rightThemeDiv span.label {
+  cursor: default;
+}
+header div.rightThemeDiv label.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+header div.rightThemeDiv label.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+header div.rightThemeDiv label.switch span.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+header div.rightThemeDiv label.switch span.slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+header div.rightThemeDiv label.switch span.round {
+  border-radius: 34px;
+}
+header div.rightThemeDiv label.switch span.round::before {
+  border-radius: 50%;
+}
+header div.rightThemeDiv label.switch input:checked + span.slider {
+  background-color: #f8f9fa;
+}
+header div.rightThemeDiv label.switch input:focus + span.slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+header div.rightThemeDiv label.switch input:checked + span.slider:before {
+  background-color: #000;
+  -webkit-transform: translateX(15px);
+  -moz-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+header ul {
+  display: flex;
+  gap: 30px;
+}
+header ul a {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+header ul a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #121214;
+}
+main div.mainContainer {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+main ul#products {
+  max-width: 890px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+main ul#products li.item {
+  max-width: 280px;
+  height: 375px;
+  border-radius: 10px;
+}
+main ul#products li.item div.description {
+  height: 100%;
+  margin: 2px;
+  border-radius: 5px;
+  background-color: #212529;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main ul#products li.item div.description img.gameImg {
+  height: 130px;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+main ul#products li.item div.description div.tagDiv {
+  max-height: 50px;
+  overflow: hidden;
+  color: #f8f9fa;
+}
+main ul#products li.item div.description div.tagDiv small.tag {
+  height: 20px;
+  border-radius: 3px;
+  margin: 2px 0 2px 5px;
+  padding: 1px 5px;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  font-family: "Nunito", sans-serif;
+}
+main ul#products li.item div.description p.gameDescription {
+  font-size: 0.875rem;
+}
+main ul#products li.item div.description strong.gameTitle,
+main ul#products li.item div.description p.gameDescription,
+main ul#products li.item div.description strong.gamePrice {
+  padding: 10px 10px;
+}
+main ul#products li.item div.description button.addToCart {
+  max-width: 75px;
+  width: 100%;
+  height: 30px;
+  margin: 5px 7px;
+  border: 2px solid #f8f9fa;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+}
+main ul#products li.item div.description button.addToCart:hover {
+  background-color: #fff;
+  border-color: #121214;
+  color: #121214;
+}
+
+main aside.shoppingCart {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  gap: 20px;
+  background-color: #212529;
+}
+main aside.shoppingCart div#searchBar {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px 5px 0px 0px;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main aside.shoppingCart div#searchBar button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+main aside.shoppingCart div#searchBar button:hover {
+  background-color: #f8f9fa;
+}
+main aside.shoppingCart div#searchBar button:hover span {
+  color: #121214;
+}
+main aside.shoppingCart div#searchBar input {
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #121214;
+  font-weight: 500;
+}
+main aside.shoppingCart div#searchBar input::placeholder {
+  font-style: italic;
+}
+main aside.shoppingCart div#searchBar span {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #f8f9fa;
+  border-radius: 5px;
+}
+main aside.shoppingCart div#shoppingInfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+main aside.shoppingCart div#cart {
+  width: 100%;
+}
+main aside.shoppingCart div#cart h2 {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #f8f9fa;
+}
+main aside.shoppingCart div#cart h2 span {
+  height: 25px;
+}
+main aside.shoppingCart div#cart ul#shoppingList {
+  width: 100%;
+  background-color: #212529;
+  height: 300px;
+  overflow-y: auto;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main aside.shoppingCart div#cart ul#shoppingList li.cartItem {
+  width: 100%;
+  max-width: 350px;
+  margin: 5px 0;
+  padding: 0px 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: default;
+}
+main aside.shoppingCart div#cart ul#shoppingList li.cartItem img.cartImg {
+  width: 120px;
+  border-radius: 3px;
+}
+main aside.shoppingCart div#cart ul#shoppingList li.cartItem div.cartItemDesc {
+  width: 130px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main aside.shoppingCart div#cart ul#shoppingList li.cartItem div.cartItemDesc .nameStrong {
+  display: block;
+}
+main aside.shoppingCart div#cart ul#shoppingList li.cartItem button.removeItem {
+  border: none;
+}
+main aside.shoppingCart div#cart ul#shoppingList li.cartItem button.removeItem:hover {
+  text-decoration: underline;
+}
+main aside.shoppingCart div#shoppingInfo {
+  width: 100%;
+  height: 100px;
+  font-weight: 500;
+}
+main aside.shoppingCart div#shoppingInfo span.quantity,
+main aside.shoppingCart div#shoppingInfo span.total {
+  width: 50%;
+  padding: 10px;
+}
+main aside.shoppingCart div#shoppingInfo span.number,
+main aside.shoppingCart div#shoppingInfo span.value {
+  text-align: right;
+}
+
+/*# sourceMappingURL=styles.css.map */

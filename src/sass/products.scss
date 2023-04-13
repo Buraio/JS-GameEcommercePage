@@ -19,14 +19,14 @@ main {
         flex-wrap: wrap;
         justify-content: space-between;
 
-        img.gameImg {
+        img.game-img {
           height: 130px;
           margin: 0;
           border-top-left-radius: 5px;
           border-top-right-radius: 5px;
         }
 
-        div.tagDiv {
+        div.tag-div {
           max-height: 50px;
           overflow: hidden;
           color: $gray0;
@@ -42,17 +42,17 @@ main {
           }
         }
 
-        p.gameDescription {
+        p.game-description {
           font-size: $text-size7;
         }
 
-        strong.gameTitle,
-        p.gameDescription,
-        strong.gamePrice {
+        strong.game-title,
+        p.game-description,
+        strong.game-price {
           padding: 10px 10px;
         }
 
-        button.addToCart {
+        button.add-to-cart {
           max-width: 75px;
           width: 100%;
           height: 30px;

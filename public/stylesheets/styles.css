@@ -206,18 +206,18 @@ main ul#products li.item div.description {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-main ul#products li.item div.description img.gameImg {
+main ul#products li.item div.description img.game-img {
   height: 130px;
   margin: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-main ul#products li.item div.description div.tagDiv {
+main ul#products li.item div.description div.tag-div {
   max-height: 50px;
   overflow: hidden;
   color: #f8f9fa;
 }
-main ul#products li.item div.description div.tagDiv small.tag {
+main ul#products li.item div.description div.tag-div small.tag {
   height: 20px;
   border-radius: 3px;
   margin: 2px 0 2px 5px;
@@ -226,15 +226,15 @@ main ul#products li.item div.description div.tagDiv small.tag {
   background-color: var(--secondary-color);
   font-family: "Nunito", sans-serif;
 }
-main ul#products li.item div.description p.gameDescription {
+main ul#products li.item div.description p.game-description {
   font-size: 0.875rem;
 }
-main ul#products li.item div.description strong.gameTitle,
-main ul#products li.item div.description p.gameDescription,
-main ul#products li.item div.description strong.gamePrice {
+main ul#products li.item div.description strong.game-title,
+main ul#products li.item div.description p.game-description,
+main ul#products li.item div.description strong.game-price {
   padding: 10px 10px;
 }
-main ul#products li.item div.description button.addToCart {
+main ul#products li.item div.description button.add-to-cart {
   max-width: 75px;
   width: 100%;
   height: 30px;
@@ -247,7 +247,7 @@ main ul#products li.item div.description button.addToCart {
   -moz-transition: 0.25s;
   transition: 0.25s;
 }
-main ul#products li.item div.description button.addToCart:hover {
+main ul#products li.item div.description button.add-to-cart:hover {
   background-color: #fff;
   border-color: #121214;
   color: #121214;

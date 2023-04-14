@@ -1,5 +1,5 @@
 main {
-  aside.shoppingCart {
+  aside.shopping-cart {
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -10,7 +10,7 @@ main {
     gap: 20px;
     background-color: $gray3;
 
-    div#searchBar {
+    div#search-bar {
       width: 100%;
       height: 50px;
       border-radius: 5px 5px 0px 0px;
@@ -58,7 +58,7 @@ main {
       }
     }
 
-    div#shoppingInfo {
+    div#shopping-info {
       display: flex;
       flex-wrap: wrap;
     }
@@ -79,7 +79,7 @@ main {
         }
       }
 
-      ul#shoppingList {
+      ul#shopping-list {
         width: 100%;
         background-color: $gray3;
         height: 300px;
@@ -89,7 +89,7 @@ main {
         flex-direction: column;
         align-items: center;
 
-        li.cartItem {
+        li.cart-item {
           width: 100%;
           max-width: 350px;
           margin: 5px 0;
@@ -98,24 +98,24 @@ main {
           justify-content: space-between;
           cursor: default;
 
-          img.cartImg {
+          img.cart-img {
             width: 120px;
             border-radius: 3px;
           }
 
-          div.cartItemDesc {
-            width: 130px;
+          div.cart-item-desc {
+            width: 100%;
+            max-width: 200px;
             padding: 5px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
 
-            .nameStrong {
+            .name-strong {
               display: block;
             }
           }
 
-          button.removeItem {
+          button.remove-item {
             border: none;
 
             &:hover {
@@ -126,7 +126,7 @@ main {
       }
     }
 
-    div#shoppingInfo {
+    div#shopping-info {
       width: 100%;
       height: 100px;
       font-weight: $weight-medium;

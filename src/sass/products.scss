@@ -69,6 +69,11 @@ main {
             border-color: $gray4;
             color: $gray4;
           }
+
+          &:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+          }
         }
       }
     }

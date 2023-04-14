@@ -206,18 +206,18 @@ main ul#products li.item div.description {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-main ul#products li.item div.description img.gameImg {
+main ul#products li.item div.description img.game-img {
   height: 130px;
   margin: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-main ul#products li.item div.description div.tagDiv {
+main ul#products li.item div.description div.tag-div {
   max-height: 50px;
   overflow: hidden;
   color: #f8f9fa;
 }
-main ul#products li.item div.description div.tagDiv small.tag {
+main ul#products li.item div.description div.tag-div small.tag {
   height: 20px;
   border-radius: 3px;
   margin: 2px 0 2px 5px;
@@ -226,15 +226,15 @@ main ul#products li.item div.description div.tagDiv small.tag {
   background-color: var(--secondary-color);
   font-family: "Nunito", sans-serif;
 }
-main ul#products li.item div.description p.gameDescription {
+main ul#products li.item div.description p.game-description {
   font-size: 0.875rem;
 }
-main ul#products li.item div.description strong.gameTitle,
-main ul#products li.item div.description p.gameDescription,
-main ul#products li.item div.description strong.gamePrice {
+main ul#products li.item div.description strong.game-title,
+main ul#products li.item div.description p.game-description,
+main ul#products li.item div.description strong.game-price {
   padding: 10px 10px;
 }
-main ul#products li.item div.description button.addToCart {
+main ul#products li.item div.description button.add-to-cart {
   max-width: 75px;
   width: 100%;
   height: 30px;
@@ -247,13 +247,17 @@ main ul#products li.item div.description button.addToCart {
   -moz-transition: 0.25s;
   transition: 0.25s;
 }
-main ul#products li.item div.description button.addToCart:hover {
+main ul#products li.item div.description button.add-to-cart:hover {
   background-color: #fff;
   border-color: #121214;
   color: #121214;
 }
+main ul#products li.item div.description button.add-to-cart:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
 
-main aside.shoppingCart {
+main aside.shopping-cart {
   width: 100%;
   max-width: 400px;
   display: flex;
@@ -264,7 +268,7 @@ main aside.shoppingCart {
   gap: 20px;
   background-color: #212529;
 }
-main aside.shoppingCart div#searchBar {
+main aside.shopping-cart div#search-bar {
   width: 100%;
   height: 50px;
   border-radius: 5px 5px 0px 0px;
@@ -273,7 +277,7 @@ main aside.shoppingCart div#searchBar {
   justify-content: space-evenly;
   align-items: center;
 }
-main aside.shoppingCart div#searchBar button {
+main aside.shopping-cart div#search-bar button {
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -281,13 +285,13 @@ main aside.shoppingCart div#searchBar button {
   -moz-transition: 0.2s;
   transition: 0.2s;
 }
-main aside.shoppingCart div#searchBar button:hover {
+main aside.shopping-cart div#search-bar button:hover {
   background-color: #f8f9fa;
 }
-main aside.shoppingCart div#searchBar button:hover span {
+main aside.shopping-cart div#search-bar button:hover span {
   color: #121214;
 }
-main aside.shoppingCart div#searchBar input {
+main aside.shopping-cart div#search-bar input {
   width: 100%;
   max-width: 300px;
   height: 30px;
@@ -297,23 +301,23 @@ main aside.shoppingCart div#searchBar input {
   color: #121214;
   font-weight: 500;
 }
-main aside.shoppingCart div#searchBar input::placeholder {
+main aside.shopping-cart div#search-bar input::placeholder {
   font-style: italic;
 }
-main aside.shoppingCart div#searchBar span {
+main aside.shopping-cart div#search-bar span {
   width: 30px;
   height: 30px;
   border: 2px solid #f8f9fa;
   border-radius: 5px;
 }
-main aside.shoppingCart div#shoppingInfo {
+main aside.shopping-cart div#shopping-info {
   display: flex;
   flex-wrap: wrap;
 }
-main aside.shoppingCart div#cart {
+main aside.shopping-cart div#cart {
   width: 100%;
 }
-main aside.shoppingCart div#cart h2 {
+main aside.shopping-cart div#cart h2 {
   height: 50px;
   display: flex;
   justify-content: center;
@@ -321,10 +325,10 @@ main aside.shoppingCart div#cart h2 {
   gap: 10px;
   border-bottom: 2px solid #f8f9fa;
 }
-main aside.shoppingCart div#cart h2 span {
+main aside.shopping-cart div#cart h2 span {
   height: 25px;
 }
-main aside.shoppingCart div#cart ul#shoppingList {
+main aside.shopping-cart div#cart ul#shopping-list {
   width: 100%;
   background-color: #212529;
   height: 300px;
@@ -334,7 +338,7 @@ main aside.shoppingCart div#cart ul#shoppingList {
   flex-direction: column;
   align-items: center;
 }
-main aside.shoppingCart div#cart ul#shoppingList li.cartItem {
+main aside.shopping-cart div#cart ul#shopping-list li.cart-item {
   width: 100%;
   max-width: 350px;
   margin: 5px 0;
@@ -343,38 +347,38 @@ main aside.shoppingCart div#cart ul#shoppingList li.cartItem {
   justify-content: space-between;
   cursor: default;
 }
-main aside.shoppingCart div#cart ul#shoppingList li.cartItem img.cartImg {
+main aside.shopping-cart div#cart ul#shopping-list li.cart-item img.cart-img {
   width: 120px;
   border-radius: 3px;
 }
-main aside.shoppingCart div#cart ul#shoppingList li.cartItem div.cartItemDesc {
-  width: 130px;
+main aside.shopping-cart div#cart ul#shopping-list li.cart-item div.cart-item-desc {
+  width: 100%;
+  max-width: 200px;
   padding: 5px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
-main aside.shoppingCart div#cart ul#shoppingList li.cartItem div.cartItemDesc .nameStrong {
+main aside.shopping-cart div#cart ul#shopping-list li.cart-item div.cart-item-desc .name-strong {
   display: block;
 }
-main aside.shoppingCart div#cart ul#shoppingList li.cartItem button.removeItem {
+main aside.shopping-cart div#cart ul#shopping-list li.cart-item button.remove-item {
   border: none;
 }
-main aside.shoppingCart div#cart ul#shoppingList li.cartItem button.removeItem:hover {
+main aside.shopping-cart div#cart ul#shopping-list li.cart-item button.remove-item:hover {
   text-decoration: underline;
 }
-main aside.shoppingCart div#shoppingInfo {
+main aside.shopping-cart div#shopping-info {
   width: 100%;
   height: 100px;
   font-weight: 500;
 }
-main aside.shoppingCart div#shoppingInfo span.quantity,
-main aside.shoppingCart div#shoppingInfo span.total {
+main aside.shopping-cart div#shopping-info span.quantity,
+main aside.shopping-cart div#shopping-info span.total {
   width: 50%;
   padding: 10px;
 }
-main aside.shoppingCart div#shoppingInfo span.number,
-main aside.shoppingCart div#shoppingInfo span.value {
+main aside.shopping-cart div#shopping-info span.number,
+main aside.shopping-cart div#shopping-info span.value {
   text-align: right;
 }
 

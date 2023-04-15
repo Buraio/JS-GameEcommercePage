@@ -1,7 +1,7 @@
 class Products {
   async getProducts() {
     try {
-      const result = await fetch("./products.json");
+      const result = await fetch("products.json");
       const serializedData = await result.json();
 
       return serializedData;

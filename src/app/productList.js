@@ -15,7 +15,7 @@ class ProductList {
       const productListHTML = `
         <li class="item">
           <div class="description">
-            <img class="game-img" src="./src/media/img/${item.img}">
+            <img class="game-img" src="../src/media/img/${item.img}">
             <div class="tag-div">
               ${tagList}
             </div>

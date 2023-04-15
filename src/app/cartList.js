@@ -1,12 +1,10 @@
-import { ProductList } from "./productList.js";
-
 const shoppingList = document.querySelector("#shopping-list");
 
 class CartList {
   addProductToCart(product) {
     const cartListHTML = `
       <li class="cart-item">
-        <img class="cart-img" src="./src/media/img/${product.img}">
+        <img class="cart-img" src="../src/media/img/${product.img}">
         <div class="cart-item-desc">
           <div>
             <strong class="name-strong">${product.name}</strong>
